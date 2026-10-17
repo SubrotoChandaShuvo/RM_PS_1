@@ -39,3 +39,14 @@ var compareTriplets = function(a, b) {
 
     return [alice, bob];
 };
+
+
+var aVeryBigSum = function(ar) {
+    let sum = 0;
+
+    for (let i = 0; i < ar.length; i++) {
+        sum = sum + ar[i];
+    }
+
+    return sum;
+};
