@@ -16,3 +16,12 @@ var posNeg = function(a, b, negative) {
     }
     return (a < 0 && b > 0) || (a > 0 && b < 0);
 };
+
+var notString = function(str) {
+    if (str.startsWith("not")) {
+        return str;
+    }
+    return "not " + str;
+};
+
+
