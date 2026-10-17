@@ -9,3 +9,10 @@ var makes10 = function(a, b) {
 var nearHundred = function(n) {
     return (n >= 90 && n <= 110) || (n >= 190 && n <= 210);
 };
+
+var posNeg = function(a, b, negative) {
+    if (negative) {
+        return a < 0 && b < 0;
+    }
+    return (a < 0 && b > 0) || (a > 0 && b < 0);
+};
