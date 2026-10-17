@@ -25,3 +25,17 @@ var notString = function(str) {
 };
 
 
+var compareTriplets = function(a, b) {
+    let person_a = 0;
+    let person_b = 0;
+
+    for (let i = 0; i < 3; i++) {
+        if (a[i] > b[i]) {
+            person_a++;
+        } else if (a[i] < b[i]) {
+            person_b++;
+        }
+    }
+
+    return [alice, bob];
+};
