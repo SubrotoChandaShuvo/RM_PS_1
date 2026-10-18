@@ -88,3 +88,16 @@ var gradingStudents = function(grades) {
         return grade;
     });
 };
+
+var timeConversion = function(s) {
+    let hour = Number(s.slice(0, 2));
+    let period = s.slice(-2);
+
+    if (period === "AM" && hour === 12) {
+        hour = 0;
+    } else if (period === "PM" && hour !== 12) {
+        hour += 12;
+    }
+
+    return String(hour).padStart(2, "0") + s.slice(2, 8);
+};
