@@ -101,3 +101,10 @@ var timeConversion = function(s) {
 
     return String(hour).padStart(2, "0") + s.slice(2, 8);
 };
+
+
+var repeatStr = function(n, s) {
+    return s.repeat(n);
+};
+
+
