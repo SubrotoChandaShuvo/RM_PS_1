@@ -123,3 +123,8 @@ var positiveSum = function(arr) {
 
     return sum;
 };
+
+
+var summation = function(num) {
+    return (num * (num + 1)) / 2;
+};
