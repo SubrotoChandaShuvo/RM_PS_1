@@ -108,3 +108,7 @@ var repeatStr = function(n, s) {
 };
 
 
+var solution = function(str) {
+    return str.split("").reverse().join("");
+};
+
