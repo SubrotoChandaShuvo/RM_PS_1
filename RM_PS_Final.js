@@ -128,3 +128,8 @@ var positiveSum = function(arr) {
 var summation = function(num) {
     return (num * (num + 1)) / 2;
 };
+
+
+var booleanToString = function(b) {
+    return String(b);
+};
