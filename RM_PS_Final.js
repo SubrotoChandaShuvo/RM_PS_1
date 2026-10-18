@@ -112,3 +112,14 @@ var solution = function(str) {
     return str.split("").reverse().join("");
 };
 
+var positiveSum = function(arr) {
+    let sum = 0;
+
+    for (let num of arr) {
+        if (num > 0) {
+            sum += num;
+        }
+    }
+
+    return sum;
+};
