@@ -72,3 +72,19 @@ var staircase = function(n) {
 
     return result;
 };
+
+var gradingStudents = function(grades) {
+    return grades.map(grade => {
+        if (grade < 38) {
+            return grade;
+        }
+
+        let next = Math.ceil(grade / 5) * 5;
+
+        if (next - grade < 3) {
+            return next;
+        }
+
+        return grade;
+    });
+};
